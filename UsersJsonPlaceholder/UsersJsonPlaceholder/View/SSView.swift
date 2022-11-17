@@ -21,12 +21,12 @@ struct SSView: View {
                 ContentView()
             } else {
                 ZStack {
-                    Color("green").ignoresSafeArea()
+                    Color("blues").ignoresSafeArea()
                     VStack {
                         VStack {
                             Image(systemName: "person.circle")
                                 .font(.system(size: 40))
-                                .foregroundColor(Color("beige"))
+                                .foregroundColor(Color("clear"))
                         }
                         .scaleEffect(size)
                         .opacity(opacity)
@@ -39,7 +39,7 @@ struct SSView: View {
                     }
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                            withAnimation(.easeOut(duration: 1.5)) {
+                            withAnimation(.easeOut(duration: 1.8)) {
                                 self.isActive = true
                             }
                             self.isActive = true

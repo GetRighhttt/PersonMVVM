@@ -12,6 +12,9 @@
 		11FFB96F2926708700121DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FFB96E2926708700121DBA /* Assets.xcassets */; };
 		11FFB9722926708700121DBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FFB9712926708700121DBA /* Preview Assets.xcassets */; };
 		11FFB97C2926719100121DBA /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB97B2926719100121DBA /* SSView.swift */; };
+		11FFB97E2926763200121DBA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB97D2926763200121DBA /* User.swift */; };
+		11FFB980292677D200121DBA /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB97F292677D200121DBA /* UsersViewModel.swift */; };
+		11FFB98229267E5200121DBA /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB98129267E5200121DBA /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		11FFB96E2926708700121DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FFB9712926708700121DBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11FFB97B2926719100121DBA /* SSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSView.swift; sourceTree = "<group>"; };
+		11FFB97D2926763200121DBA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		11FFB97F292677D200121DBA /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		11FFB98129267E5200121DBA /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			children = (
 				11FFB96C2926708500121DBA /* ContentView.swift */,
 				11FFB97B2926719100121DBA /* SSView.swift */,
+				11FFB98129267E5200121DBA /* UsersView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,6 +90,7 @@
 		11FFB9792926709900121DBA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				11FFB97F292677D200121DBA /* UsersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 		11FFB97A292670A100121DBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11FFB97D2926763200121DBA /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FFB97E2926763200121DBA /* User.swift in Sources */,
 				11FFB97C2926719100121DBA /* SSView.swift in Sources */,
 				11FFB96D2926708500121DBA /* ContentView.swift in Sources */,
 				11FFB96B2926708500121DBA /* UsersJsonPlaceholderApp.swift in Sources */,
+				11FFB980292677D200121DBA /* UsersViewModel.swift in Sources */,
+				11FFB98229267E5200121DBA /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
