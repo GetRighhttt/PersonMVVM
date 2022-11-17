@@ -47,32 +47,18 @@ extension User {
               name: "Stefan",
               username: "GetRight",
               email: "stefanbayne@gmail.com",
-              address: .init(
-                street: "this street",
+              address: .init( street: "this street",
                 suite: "my room",
                 city: "Tampa, FL",
-                zipcode: "33617"
-              ),
+                zipcode: "33617"),
               phone: "813-232-2341",
               website: "github.com",
               company: .init(
                 name: "BlackDev",
                 catchPhrase: "GetRighhttt",
-                bs: ""))
+                bs: "yo"))
     }
 }
-
-
-
-
-;
-
-
-
-
-
-
-
 
 //-------------------------------------------------------------------------------------------------------------------------
 /*

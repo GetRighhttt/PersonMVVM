@@ -19,21 +19,26 @@ struct ContentView: View {
             // loop through users to load them in.
             // use id for each user
             ZStack {
-                
-                // if viewmodel is refresing(loading) show progress view
+                                // if viewmodel is refresing(loading) show progress view
                 if viewModel.isRefreshing {
                     ProgressView()
                 } else {
                     
-                    List {
-                        ForEach(viewModel.users, id: \.id) { user in
-                            UsersView(user: user)
-                                .listRowSeparator(.hidden)
+                    NavigationView {
+                        List {
+                            ForEach(viewModel.users, id: \.id) { user in
+                                
+                                NavigationLink(destination: DetailView(user: user)) {
+                                UsersView(user: user)
+                                        .listRowSeparator(.hidden)
+                                        .buttonStyle(.borderedProminent)
+                                }
+                            }
                         }
+                        .listStyle(.plain)
+                        .navigationBarTitle("Users List")
+                        .background(Color("blues"))
                     }
-                    .listStyle(.plain)
-                    .navigationBarTitle("Users List")
-                    .background(Color("blues"))
                 }
             }
             .onAppear(perform: viewModel.fetchUsers) // where we call our viewmodel method.
