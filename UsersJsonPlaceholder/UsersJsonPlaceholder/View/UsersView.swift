@@ -33,7 +33,6 @@ struct UsersView: View {
 
 struct UsersView_Previews: PreviewProvider {
     static var previews: some View {
-        // user init for model class declaration.
-        UsersView(user: .init(id: 1, name: "Stefan", email: "stefanbayne@gmail.com", company: .init(name: "DataCaliper"), phone: "813-210-3055", website: "github.com/getrighhttt"))
+        UsersView(user: .dummy) // .dummy extension
     }
 }
