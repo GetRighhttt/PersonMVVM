@@ -41,7 +41,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .onAppear(perform: viewModel.fetchUsers) // where we call our viewmodel method.
+            .onAppear(perform: viewModel.fetchUsers) // URLSessions. use task with async await
             .alert(isPresented: $viewModel.hasError, error: viewModel.error) {
                 Button(action: viewModel.fetchUsers) {
                     Text("Try Again")

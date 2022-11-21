@@ -88,6 +88,27 @@ final class UsersViewModel: ObservableObject {
                 }.resume() // starts the tasks and executes it for you.
         }
     }
+    
+    /*
+     Concurrency example using async and await. Above we used URLSessions to retrieve data.
+     */
+//    func fetchUsersNew() async {
+//        let usersUrlString = "https://jsonplaceholder.typicode.com/users"
+//
+//        if let url = URL(string: usersUrlString) {
+//
+//            do {
+//
+//                let (data, response) = try await URLSession.shared.data(from: url)
+//
+//                let decoder = JSONDecoder()
+    //                self.users = try decoder.decode([User](), from: data)
+//
+//            } catch {
+//
+//            }
+//        }
+//    }
 }
 
 /*
