@@ -38,7 +38,7 @@ struct ContentView: View {
                         .listStyle(.plain)
                         .navigationBarTitle("Users List")
                         .background(Color("blues"))
-                    }
+                    }.accentColor(Color("clear"))
                 }
             }
             .onAppear(perform: viewModel.fetchUsers) // URLSessions. use task with async await
